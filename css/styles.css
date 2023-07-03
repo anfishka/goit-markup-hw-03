@@ -8,7 +8,7 @@
   --green: #31d0aa;
   --slate: #434455;
   --light-slate: #8e8f99;
-  --cornflower: ##e7e9fc;
+  --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --navy-blue-modal: #2e2f42;
   --grey: #2e2f42;
@@ -26,8 +26,15 @@ h6,
 p,
 ul{
   margin: 0;
+  padding: 0;
 }
 
+.section {
+  padding-bottom: 120px;
+  /* 
+
+  */
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -36,6 +43,9 @@ body {
   letter-spacing: 0.02em;
   background: var(--white);
   color: var(--slate);
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
 
@@ -47,6 +57,60 @@ Base syles
 
 .container{
   width: 1158px;
+  margin: 0 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-section{
+
+  padding: 188px 0;
+  text-align: center;
+}
+
+.header-container{
+  margin: 0 156px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.nav-list{
+   display: flex;
+    align-items: center;
+    margin: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+  
+}
+.nav-list>.list{
+  display: flex;
+  align-items: center;
+    color: var(--navy-blue);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
+    padding-left: 0;
+    padding-right: 0;
+} 
+.nav-list>.list{
+
+}
+.lists> .list{
+  display: flex;
+  align-items: center;
+  color: var(--slate);
+  padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 40px;
+   
+    
+}
+.header-logo{
+  margin-right: 76px;
+}
+.nav-list{
+ gap: 0px;
 }
 
 .links-a {
@@ -83,17 +147,25 @@ Base syles
   cursor: pointer;
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+}
+.header-container{
+display: flex;
+align-items: center;
+
 }
 
+.header{
+border-bottom: 1px solid var(--cornflower);
+}
 .main {
 }
 .nav-list{
-display: flex;
+/* display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 24px;
+padding: 24px; */
 }
 /*
 ===============================
@@ -101,9 +173,9 @@ Header section
 ===============================
  */
 .header {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
  
 }
 .header-nav {
@@ -183,20 +255,30 @@ Hero section
 .hero-section {
   background-color: var(--grey);
 }
+
+.hero-section>.container {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
 .hero-title {
   color: var(--white);
-  text-align: center;
   line-height: 1.07;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
-
+  width: 496px;
+  margin-bottom: 48px;
 }
-.hero-btn-order {
 
+.hero-btn-order {
+padding: 16px 32px;
+border: 0;
+border-radius: 4px;
   background: var(--iris);
   color: var(--white);
 }
+
 .hero-btn-order:hover,
 .hero-btn-order:focus{
   background: var(--ocean);
@@ -206,7 +288,9 @@ Hero section
 Features section
 ===============================
  */
-.features-section {
+.features-section{
+  padding-top: 120px;
+ 
 }
 .features-title {
   font-weight: 700;
@@ -215,7 +299,17 @@ Features section
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.features-list {
+.features-list{
+  /* width: 1128px; */
+  display: flex;
+  gap: 24px;
+}
+.features-list-item>.features-subtitle{
+margin-bottom: 8px;
+}
+.features-list>li {
+  flex-basis: calc((100% - 72px) / 4);
+   padding: 0;
 }
 .features-list-item {
 }
@@ -252,11 +346,23 @@ We do section
   letter-spacing: 0.02em;
   text-transform: capitalize;
   line-height: 1.11;
+  margin-bottom: 72px;
 }
+
 .we-do-list {
+  display: flex;
+  gap: 24px;
 }
 .we-do-list-item {
+  flex-basis: calc((100%-300px)/3);
 }
+
+.we-do-list-item > img{
+width: 360px;
+height: 300px;
+}
+
+
 /*
 ===============================
 Our team section
@@ -264,6 +370,7 @@ Our team section
  */
 .our-team-section {
   background-color: var(--cloud);
+  padding-top: 120px;
 }
 .our-team-title {
   color: var(--navy-blue);
@@ -273,11 +380,15 @@ Our team section
   font-size: 36px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-team-list {
+  display: flex;
+  gap: 24px;
 }
 .our-team-list-item {
   background-color: var(--white);
+  flex-basis: calc((100% - 264px) / 4);
 }
 .our-team-subtitle {
   color: var(--navy-blue);
@@ -304,8 +415,7 @@ Filter section
 }
 .filter-section {
 }
-.section {
-}
+
 .filter-list {
 }
 .filter-list-item {
