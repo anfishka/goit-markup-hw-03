@@ -16,6 +16,19 @@
   --dairy: #fcfcfc;
 }
 
+/*RESET STYLES*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+  margin: 0;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -24,11 +37,17 @@ body {
   background: var(--white);
   color: var(--slate);
 }
+
+
 /*
 ===============================
 Base syles 
 ===============================
  */
+
+.container{
+  width: 1158px;
+}
 
 .links-a {
   list-style: none;
@@ -64,16 +83,28 @@ Base syles
   cursor: pointer;
 }
 .section {
-}
-.main {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
+.main {
+}
+.nav-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 24px;
+}
 /*
 ===============================
 Header section
 ===============================
  */
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 .header-nav {
 }
