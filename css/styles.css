@@ -163,9 +163,7 @@ Header section
   width: 1158px;
   border-bottom: 1px solid var(--cornflower);
 }
-.header-list{
-  padding: 24px 0;
-}
+
 .header-nav {
 }
 .header-logo {
@@ -187,6 +185,8 @@ Header section
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--grey);
+  padding: 24px 0; 
+  display: block; 
 }
 .header-link:hover,
 .header-link:focus{
@@ -455,10 +455,10 @@ Filter section
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .list-cards{
-margin-top: 72px;
 display: flex;
 gap: 48px 24px ;
 justify-content: center;
