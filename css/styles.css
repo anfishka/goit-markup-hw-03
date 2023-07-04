@@ -446,8 +446,24 @@ Filter section
 .filter-h1 {
 }
 .filter-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.list-btn{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
+.list-cards{
+margin-top: 72px;
+display: flex;
+gap: 24px;
+justify-content: center;
+flex-wrap: wrap;
+}
 .filter-list {
 }
 .filter-list-item {
@@ -456,7 +472,11 @@ Filter section
   border: 1px solid var(--cornflower);
   color: var(--iris);
   background: var(--cloud);
-  
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
   
 }
 .filter-btn:hover,
@@ -474,8 +494,18 @@ Project card section
 }
 .project-card-list {
 }
+
+.project-card-wrapper{
+border: 1px solid var(--cornflower);
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
+}
 .project-card-list-item {
-  border: 1px solid var(--cornflower);
+  
+  flex-basis: calc((100%-48px)/3);
+  margin-bottom: 24px;
+
 }
 .project-card-subtitle {
   font-weight: 500;
