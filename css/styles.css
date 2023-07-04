@@ -326,6 +326,21 @@ margin-bottom: 8px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*
 ===============================
 We do section 
@@ -468,6 +483,7 @@ flex-wrap: wrap;
 .filter-btn:focus {
   background-color: var(--ocean);
   color: var(--white);
+  border: 1px solid transparent;
 }
 /*
 ===============================
@@ -482,9 +498,8 @@ Project card section
 
 .project-card-wrapper{
 border: 1px solid var(--cornflower);
-padding-top: 32px;
-padding-bottom: 32px;
-padding-left: 16px;
+border-top: none;
+padding: 32px 16px;
 }
 .project-card-list-item {
   
