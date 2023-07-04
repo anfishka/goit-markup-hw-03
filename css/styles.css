@@ -16,6 +16,7 @@
   --dairy: #fcfcfc;
 }
 
+
 /*RESET STYLES*/
 h1,
 h2,
@@ -24,7 +25,8 @@ h4,
 h5,
 h6,
 p,
-ul{
+ul,
+div{
   margin: 0;
   padding: 0;
 }
@@ -60,6 +62,7 @@ Base syles
   margin: 0 156px;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 .hero-section{
 
@@ -385,10 +388,14 @@ Our team section
 .our-team-list {
   display: flex;
   gap: 24px;
+
 }
 .our-team-list-item {
   background-color: var(--white);
-  flex-basis: calc((100% - 264px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
+  text-align: center;
+
+  
 }
 .our-team-subtitle {
   color: var(--navy-blue);
@@ -396,16 +403,31 @@ Our team section
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+ 
 }
 .our-team-text {
   color: var(--slate);
+ font-size: 16px;
+ 
 }
-
+.our-team-wrapper{
+  text-align: center;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   padding-left: 16px;
+   padding-right: 16px;
+}
 /*Portfolio*/
 
 .main-portfolio {
 }
+img{
+  display: block;
+  width: 100%;
+  height: auto;
 
+}
 /*
 ===============================
 Filter section
