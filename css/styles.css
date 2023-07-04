@@ -162,8 +162,9 @@ Header section
 .header {
   width: 1158px;
   border-bottom: 1px solid var(--cornflower);
-  padding-top: 24px;
-   padding-bottom: 24px;
+}
+.header-list{
+  padding: 24px 0;
 }
 .header-nav {
 }
