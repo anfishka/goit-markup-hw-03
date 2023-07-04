@@ -59,44 +59,30 @@ Base syles
 
 .container{
   max-width: 1158px;
-  /* margin: 0 156px; */
   margin: 0 auto;
-  /* margin-left: auto;
-  margin-right: auto; */
   padding: 0 15px;
-
- 
 }
 .hero-section{
-
   padding: 188px 0;
   text-align: center;
 }
 
 .header-container{
-  max-width: 1158px;
   margin: 0 auto;
-  /* margin: 0 156px; */
     display: flex;
     justify-content: space-between;
    align-items: center;
-   padding-top: 24px;
-   padding-bottom: 24px;
+ 
 }
 .nav-list{
    display: flex;
     align-items: center;
     margin: 0;
-    /* margin-left: auto;
-    margin-right: auto; */
-  
 }
 .nav-list>.list{
   display: flex;
   align-items: center;
     color: var(--navy-blue);
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     gap: 40px;
     padding-left: 0;
     padding-right: 0;
@@ -157,8 +143,6 @@ Base syles
   cursor: pointer;
 }
 .section {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 .header-container{
 display: flex;
@@ -166,16 +150,9 @@ align-items: center;
 
 }
 
-.header{
-border-bottom: 1px solid var(--cornflower);
-}
 .main {
 }
 .nav-list{
-/* display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 24px; */
 }
 /*
 ===============================
@@ -183,10 +160,10 @@ Header section
 ===============================
  */
 .header {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
- 
+  width: 1158px;
+  border-bottom: 1px solid var(--cornflower);
+  padding-top: 24px;
+   padding-bottom: 24px;
 }
 .header-nav {
 }
@@ -279,12 +256,12 @@ Hero section
  flex-direction: column;
 }
 .hero-title {
+   max-width: 496px;
   color: var(--white);
   line-height: 1.07;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
-  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -318,7 +295,6 @@ Features section
   text-transform: capitalize;
 }
 .features-list{
-  /* width: 1128px; */
   display: flex;
   gap: 24px;
 }
@@ -410,8 +386,11 @@ Our team section
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
 
-  
 }
+.our-team-list-item:nth-child(1){
+  border-radius: 0px 0px 4px 4px;
+}
+ 
 .our-team-subtitle {
   color: var(--navy-blue);
   font-weight:500;
